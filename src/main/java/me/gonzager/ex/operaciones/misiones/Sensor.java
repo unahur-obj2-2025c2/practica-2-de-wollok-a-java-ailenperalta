@@ -1,4 +1,4 @@
-package me.gonzager.ex.operaciones.sensores;
+package me.gonzager.ex.operaciones.misiones;
 
 public class Sensor {
     private final Integer capacidad;
@@ -27,4 +27,7 @@ public class Sensor {
         return tieneMejoras ? capacidad * 2 : capacidad;
     }
 
+    public Boolean esDuradero() {
+        return durabilidad > capacidad * 2;
+    }
 }

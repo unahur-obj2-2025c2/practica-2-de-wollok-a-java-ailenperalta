@@ -4,12 +4,17 @@ import me.gonzager.ex.operaciones.misiones.Mision;
 
 public class DronComercial extends Dron {
 
-    public DronComercial(Double autonomia, Integer procesamiento) {
+    public DronComercial(Integer autonomia, Integer procesamiento) {
         super(autonomia, procesamiento);
     }
 
-    public DronComercial(Double autonomia, Integer procesamiento, Mision mision) {
+    public DronComercial(Integer autonomia, Integer procesamiento, Mision mision) {
         super(autonomia, procesamiento, mision);
+    }
+
+    @Override
+    public Integer eficienciaOperativa() {
+        return super.eficienciaOperativa() + 15;
     }
 
     @Override
